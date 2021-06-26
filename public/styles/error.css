@@ -1,0 +1,64 @@
+section {
+  margin: 0 auto;
+  width: 80%;
+  height: 100vh;
+}
+
+section header {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 11.4rem;
+}
+
+section header .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+section header .buttons .button {
+  padding: 1rem;
+}
+
+section header .buttons .button + .button {
+  margin-left: .8rem;
+}
+
+section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5rem;
+}
+
+section .container > img {
+  width: 50%;
+}
+
+section p {
+  margin-top: 5rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+/*# sourceMappingURL=error.css.map */

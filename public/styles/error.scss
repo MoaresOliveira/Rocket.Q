@@ -1,0 +1,43 @@
+
+section{
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    
+
+    header{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 11.4rem;
+
+        .buttons{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            .button{
+                padding: 1rem;
+                & + .button{
+                    margin-left: .8rem;
+                }
+            }
+        }
+    
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5rem;
+        > img{
+            width: 50%;
+        }
+    }
+    p{
+        margin-top: 5rem;
+        font-family: 'Poppins', sans-serif;
+        font-size: 3rem;
+        text-align: center;
+    }
+}
