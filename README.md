@@ -24,17 +24,21 @@ O Rocket.Q é uma aplicação de interação através de perguntas, sendo possí
 ## 🔖 Layout
 
 <p align="center">
-  <img alt="Rocket.Q" src="https://i.pinimg.com/originals/cc/65/58/cc6558828d271ebc6b08b47f9ba81d34.png" width="90%">
+  <img alt="Rocket.Q" src="https://i.pinimg.com/originals/58/f1/36/58f1364dc1b2896bcba1fa160c7b974f.png" width="90%">
 </p>
 <p align="center">
-  <img alt="Rocket.Q" src="https://i.pinimg.com/originals/48/08/d2/4808d2d19bcebc561a913c007bb794dc.png" width="90%">
+  <img alt="Rocket.Q" src="https://i.pinimg.com/originals/6d/83/e1/6d83e1d51dd4fc35505b39b9a9777f52.png" width="90%">
 </p>
 <p align="center">
-  <img alt="Rocket.Q" src="https://i.pinimg.com/originals/a6/0c/24/a60c248c40fc2230b4e9336df51a104f.png" width="90%">
+  <img alt="Rocket.Q" src="https://i.pinimg.com/originals/3a/ba/79/3aba791afb632621b1c47912d25eaa85.png" width="90%">
 </p>
 <p align="center">
-  <img alt="Rocket.Q" src="https://i.pinimg.com/originals/f2/ea/5a/f2ea5a5ae4d147bf4f14eab46feb031c.png" width="90%">
+  <img alt="Rocket.Q" src="https://i.pinimg.com/originals/d7/39/fc/d739fca3db8feb0e0993e75c243fa88b.png" width="90%">
 </p>
+<p align="center">
+  <img alt="Rocket.Q" src="https://i.pinimg.com/originals/e5/30/ae/e530ae7f43f59577f5ccd56e341c0a34.png" width="90%">
+</p>
+
 
 ## 🚀 Tecnologias
 
