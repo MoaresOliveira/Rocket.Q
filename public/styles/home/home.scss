@@ -13,11 +13,6 @@ header {
     align-items: center;
     justify-content: space-between;
     grid-area: header;
-    #viewMode{
-        width: 5rem;
-        font-size: 2rem;
-        color: var(--black);
-    }
 }
 #bg {
     grid-area: left;

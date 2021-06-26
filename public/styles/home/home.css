@@ -25,12 +25,6 @@ header {
   grid-area: header;
 }
 
-header #viewMode {
-  width: 5rem;
-  font-size: 2rem;
-  color: var(--black);
-}
-
 #bg {
   -ms-grid-row: 2;
   -ms-grid-column: 1;

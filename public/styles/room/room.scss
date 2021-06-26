@@ -1,110 +1,106 @@
-#room{
+#room {
     max-width: 80%;
-    header{
+    header {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-    #viewMode{
-        width: 5rem;
-        font-size: 2rem;
-        color: var(--black);
-        margin-right: .8rem;
-    }
-    .buttons{
-        display: flex;
-        img{
-            width: 2rem;
-            height: 2rem;
+        .label {
+            margin-right: 1.2rem;
         }
-        .button:nth-child(2){
-            margin-right: .8rem;
-            padding: 1.3rem 1.6rem;
-            img{
-                margin-left: 1.16rem;
+        .buttons {
+            display: flex;
+            align-items: center;
+            img {
+                width: 2rem;
+                height: 2rem;
+            }
+            .button {
+                margin-right: 0.8rem;
+                padding: 1.3rem 1.6rem;
+                img {
+                    margin-left: 1.16rem;
+                }
+            }
+            .button + .button {
+                padding: 1.3rem 3.2rem;
+                img {
+                    margin-right: 1rem;
+                }
             }
         }
-        .button:nth-child(3){
-            padding: 1.3rem 3.2rem;
-            img{
-                margin-right: 1rem;
-            }
-        }
-        
-    }
     }
 
-    main{
-        #question-form{   
-                    
-            h2{
-                font-family: 'Poppins', sans-serif;
+    main {
+        #question-form {
+            h2 {
+                font-family: "Poppins", sans-serif;
                 font-weight: 700;
                 color: var(--black);
                 font-size: 2.8rem;
                 margin-bottom: 2.4rem;
                 line-height: 4.2rem;
             }
-            form{
+            form {
                 padding: 1.6rem;
-                border: .2rem solid var(--grey-blue);
-                border-radius: 0 .8rem .8rem .8rem;
+                border: 0.2rem solid var(--grey-blue);
+                border-radius: 0 0.8rem 0.8rem 0.8rem;
                 margin-bottom: 1.6rem;
-                
-                textarea{
+
+                textarea {
                     resize: none;
                     background: none;
                     width: 100%;
                     outline: none;
                     color: var(--black);
-                    &::placeholder{
+                    &::placeholder {
                         color: var(--grey-blue);
                     }
                 }
-                footer{
+                footer {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    > div{
+                    > div {
                         display: flex;
                         align-items: center;
-                        
-                        font-family: 'Poppins', sans-serif;
+
+                        font-family: "Poppins", sans-serif;
                         font-weight: 400;
                         font-size: 1.4rem;
                         color: var(--Icons-details);
                         line-height: 4rem;
-                        img{
-                            margin-right: .9rem;
+                        img {
+                            margin-right: 0.9rem;
                         }
                     }
-                    button{
+                    button {
                         height: auto;
-                        padding: .8rem 2.4rem;
+                        padding: 0.8rem 2.4rem;
                         line-height: 2.4rem;
                     }
                 }
             }
         }
-        .question-wrapper{
-            margin-bottom: .8rem;
+        .question-wrapper {
+            margin-bottom: 0.8rem;
             background-color: var(--light-blue);
-            border-radius: 0 .8rem .8rem .8rem;
+            border-radius: 0 0.8rem 0.8rem 0.8rem;
             padding: 2.4rem 3.2rem 2.5rem 2.4rem;
-            font-family: 'Open Sans' ,sans-serif;
-            
-            .question-content{
+            font-family: "Open Sans", sans-serif;
+
+            .question-content {
                 display: flex;
                 align-items: flex-start;
-                .user{
+                .user {
                     background: var(--blue);
                     clip-path: circle();
                     padding: 1.15rem 1.4rem;
                 }
-                .question{                    
+                .question {
                     color: var(--black);
                     margin-left: 1.6rem;
-                    p{
+                    p {
                         word-break: break-word;
                         display: flex;
                         align-items: center;
@@ -112,7 +108,7 @@
                     }
                 }
             }
-            .actions{
+            .actions {
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;
@@ -122,47 +118,47 @@
                     align-items: center;
                     margin-right: 2.4rem;
                     cursor: default;
-                    > img{
-                        margin-right: .8rem;
+                    > img {
+                        margin-right: 0.8rem;
                     }
                 }
-                > a{
+                > a {
                     color: var(--grey-dark);
                     display: flex;
                     align-items: center;
-                    & + a{
-                    margin-left: 2.4rem;
+                    & + a {
+                        margin-left: 2.4rem;
                     }
-                    > img{
-                        margin-right: .8rem;
+                    > img {
+                        margin-right: 0.8rem;
                     }
                 }
             }
-            &.read{
+            &.read {
                 background: var(--grey-medium);
-                .question-content{ 
-                    .user{
+                .question-content {
+                    .user {
                         background: var(--grey-blue);
                     }
                 }
             }
         }
-        .no-questions{
+        .no-questions {
             text-align: center;
             margin-top: 5.2rem;
             color: var(--black);
-            img{
+            img {
                 max-width: 100%;
                 margin-bottom: 1.2rem;
             }
-            p{
-                font-family: 'Poppins', sans-serif;
+            p {
+                font-family: "Poppins", sans-serif;
                 font-size: 1.8rem;
                 font-weight: 600;
-                
-                & + p{
+
+                & + p {
                     margin-top: 1.3rem;
-                    font-family: 'Open Sans', sans-serif;
+                    font-family: "Open Sans", sans-serif;
                     font-size: 1.4rem;
                     font-weight: 400;
                     line-height: 1.9rem;
@@ -170,5 +166,4 @@
             }
         }
     }
-
 }

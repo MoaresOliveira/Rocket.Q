@@ -27,7 +27,12 @@
                 </a>
                 
                 <div class="buttons">
-                    <button id="viewMode"><i class="far fa-moon"></i></button>
+                    <input type="checkbox" name="viewMode" id="viewMode">
+                    <label for="viewMode" class="label">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <div class="knob"></div>
+                    </label>
                     <div class="button outlined" id="room-id" data-id="<%= roomId %>">
                         #<%= roomId %>
                         <img src="/images/copy.svg" />

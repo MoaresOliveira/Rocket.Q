@@ -15,17 +15,17 @@
           justify-content: space-between;
 }
 
-#room header #viewMode {
-  width: 5rem;
-  font-size: 2rem;
-  color: var(--black);
-  margin-right: .8rem;
+#room header .label {
+  margin-right: 1.2rem;
 }
 
 #room header .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #room header .buttons img {
@@ -33,25 +33,25 @@
   height: 2rem;
 }
 
-#room header .buttons .button:nth-child(2) {
-  margin-right: .8rem;
+#room header .buttons .button {
+  margin-right: 0.8rem;
   padding: 1.3rem 1.6rem;
 }
 
-#room header .buttons .button:nth-child(2) img {
+#room header .buttons .button img {
   margin-left: 1.16rem;
 }
 
-#room header .buttons .button:nth-child(3) {
+#room header .buttons .button + .button {
   padding: 1.3rem 3.2rem;
 }
 
-#room header .buttons .button:nth-child(3) img {
+#room header .buttons .button + .button img {
   margin-right: 1rem;
 }
 
 #room main #question-form h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   color: var(--black);
   font-size: 2.8rem;
@@ -62,7 +62,7 @@
 #room main #question-form form {
   padding: 1.6rem;
   border: 0.2rem solid var(--grey-blue);
-  border-radius: 0 .8rem .8rem .8rem;
+  border-radius: 0 0.8rem 0.8rem 0.8rem;
   margin-bottom: 1.6rem;
 }
 
@@ -109,7 +109,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
   color: var(--Icons-details);
@@ -117,21 +117,21 @@
 }
 
 #room main #question-form form footer > div img {
-  margin-right: .9rem;
+  margin-right: 0.9rem;
 }
 
 #room main #question-form form footer button {
   height: auto;
-  padding: .8rem 2.4rem;
+  padding: 0.8rem 2.4rem;
   line-height: 2.4rem;
 }
 
 #room main .question-wrapper {
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
   background-color: var(--light-blue);
-  border-radius: 0 .8rem .8rem .8rem;
+  border-radius: 0 0.8rem 0.8rem 0.8rem;
   padding: 2.4rem 3.2rem 2.5rem 2.4rem;
-  font-family: 'Open Sans' ,sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 #room main .question-wrapper .question-content {
@@ -191,7 +191,7 @@
 }
 
 #room main .question-wrapper .actions > .readquestion > img {
-  margin-right: .8rem;
+  margin-right: 0.8rem;
 }
 
 #room main .question-wrapper .actions > a {
@@ -209,7 +209,7 @@
 }
 
 #room main .question-wrapper .actions > a > img {
-  margin-right: .8rem;
+  margin-right: 0.8rem;
 }
 
 #room main .question-wrapper.read {
@@ -232,14 +232,14 @@
 }
 
 #room main .no-questions p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.8rem;
   font-weight: 600;
 }
 
 #room main .no-questions p + p {
   margin-top: 1.3rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.9rem;
