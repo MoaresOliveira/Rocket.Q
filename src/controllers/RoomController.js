@@ -77,11 +77,11 @@ module.exports = {
         let isRoom = true
 
         // Verifica se o número já existe
-        const roomsExistIds = await db.all(`
-                SELECT id FROM rooms;
+        const roomsExistIds = await db.get(`
+                SELECT id FROM rooms WHERE id = ${roomId};
             `);
-        isRoom = roomsExistIds.some((roomExistId) => roomExistId === roomId);
-        if (isRoom) {
+        isRoom = roomsExistIds === undefined ? false : true;
+        if(isRoom) {
             // Redireciona para a sala
             res.redirect(`/room/${roomId}`);
         }else{
