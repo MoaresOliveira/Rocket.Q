@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="Rocket.Q" title="Rocket.Q" src="/public/images/logo.svg" width="220px" />
+  <img alt="Rocket.Q" title="Rocket.Q" src="/public/images/logo.svg" width="220px" style="background-color: #fff;"/>
 </h1>
 
 <p align="center">
