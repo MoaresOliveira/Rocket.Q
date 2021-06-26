@@ -27,6 +27,25 @@ html{
     font-size: 62.5%;
 }
 
+html.dark{
+    --black: #FAFAFA;
+    --white: #0D114F;
+    --red: #E83F5B;
+    --light-blue: #E0ECFF;
+    --blue: #3485FF;
+    --background: #0D114F;
+    --Overlay: #040911;
+    --Icons-details: #A5B0C1;
+
+    --grey-dark: #4D5E77;
+    --grey-blue: #A1B2CD;
+    --grey-medium: #D3D9E2;
+    --grey-light: #E5EAF1;
+    --grey-medium: #eaecf1;
+    
+    font-size: 62.5%;
+}
+
 body{
     display: flex;
     height: 100vh;

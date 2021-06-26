@@ -9,10 +9,25 @@
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: header;
+}
+
+header #viewMode {
+  width: 5rem;
+  font-size: 2rem;
+  color: var(--black);
 }
 
 #bg {
@@ -31,6 +46,7 @@ header {
   -webkit-clip-path: circle();
           clip-path: circle();
   opacity: 0.1;
+  z-index: -100;
 }
 
 #bg .ball.top {
