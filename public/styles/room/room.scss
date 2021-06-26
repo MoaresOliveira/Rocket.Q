@@ -109,6 +109,16 @@
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;
+                > .readquestion {
+                    color: var(--grey-dark);
+                    display: flex;
+                    align-items: center;
+                    margin-right: 2.4rem;
+                    cursor: default;
+                    > img{
+                        margin-right: .8rem;
+                    }
+                }
                 > a{
                     color: var(--grey-dark);
                     display: flex;
