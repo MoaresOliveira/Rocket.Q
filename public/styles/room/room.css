@@ -156,6 +156,7 @@
 }
 
 #room main .question-wrapper .question-content .question p {
+  color: #0d114f;
   word-break: break-word;
   display: -webkit-box;
   display: -ms-flexbox;

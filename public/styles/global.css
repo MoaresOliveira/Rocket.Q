@@ -20,7 +20,7 @@ html {
     --grey-blue: #a1b2cd;
     --grey-medium: #d3d9e2;
     --grey-light: #e5eaf1;
-    --grey-medium: #eaecf1;
+    --grey-medium: #eaecf180;
 
     font-size: 62.5%;
 }
@@ -39,7 +39,7 @@ html.dark {
     --grey-blue: #a1b2cd;
     --grey-medium: #d3d9e2;
     --grey-light: #e5eaf1;
-    --grey-medium: #eaecf1;
+    --grey-medium: #eaecf180;
 
     font-size: 62.5%;
 }
