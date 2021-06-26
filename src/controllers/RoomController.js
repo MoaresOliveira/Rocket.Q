@@ -76,17 +76,23 @@ module.exports = {
         const roomId = req.body.roomId;
         let isRoom = true
 
-        // Verifica se o número já existe
-        const roomsExistIds = await db.get(`
-                SELECT id FROM rooms WHERE id = ${roomId};
-            `);
-        isRoom = roomsExistIds === undefined ? false : true;
-        if(isRoom) {
-            // Redireciona para a sala
-            res.redirect(`/room/${roomId}`);
+
+        if(roomId.length == 0){
+            res.redirect(`/room-not-found/404`);
         }else{
-            // Redireciona para a sala de 404
-            res.redirect("/room-not-found")
+            // Verifica se o número já existe
+            const roomsExistIds = await db.get(`
+                    SELECT id FROM rooms WHERE id = ${roomId};
+                `);
+            isRoom = roomsExistIds === undefined ? false : true;
+            if(isRoom) {
+                // Redireciona para a sala
+                res.redirect(`/room/${roomId}`);
+            }else{
+                // Redireciona para a sala de 404
+                res.redirect(`/room-not-found/${roomId}`)
+            }
+
         }
         
     },
