@@ -75,6 +75,13 @@ textarea {
     border-width: 0;
 }
 /* Input and Buttons */
+input{
+    background: transparent;
+    color: var(--black);
+}
+input::placeholder{
+    color: var(--grey-blue);
+}
 input,
 button,
 .button {
