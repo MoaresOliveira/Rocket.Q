@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="Rocket.Q" title="Rocket.Q" src="/public/images/logo.svg" width="220px" style="background-color: #fff;"/>
+  <img alt="Rocket.Q" title="Rocket.Q" src="https://i.pinimg.com/originals/e4/a7/48/e4a748dfcd3ae797f1f54cb0aeb75682.png" width="220px"/>
 </h1>
 
 <p align="center">
@@ -17,15 +17,24 @@
 
 <br>
 
-<p align="center">
-  <img alt="Rocket.Q" src="https://prnt.sc/16tgqte" width="100%">
-</p>
-
 ## 💻 Projeto
 
 O Rocket.Q é uma aplicação de interação através de perguntas, sendo possível criar uma sala para internautas anônimos fazerem perguntas e o criador da sala em posse de uma senha gerenciar essas perguntas e marcar como lidas.
 
 ## 🔖 Layout
+
+<p align="center">
+  <img alt="Rocket.Q" src="https://i.pinimg.com/originals/cc/65/58/cc6558828d271ebc6b08b47f9ba81d34.png" width="100%">
+</p>
+<p align="center">
+  <img alt="Rocket.Q" src="https://i.pinimg.com/originals/48/08/d2/4808d2d19bcebc561a913c007bb794dc.png" width="100%">
+</p>
+<p align="center">
+  <img alt="Rocket.Q" src="https://i.pinimg.com/originals/a6/0c/24/a60c248c40fc2230b4e9336df51a104f.png" width="100%">
+</p>
+<p align="center">
+  <img alt="Rocket.Q" src="https://i.pinimg.com/originals/f2/ea/5a/f2ea5a5ae4d147bf4f14eab46feb031c.png" width="100%">
+</p>
 
 ## 🚀 Tecnologias
 
