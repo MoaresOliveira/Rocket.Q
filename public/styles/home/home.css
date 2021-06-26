@@ -6,6 +6,7 @@
   -ms-grid-rows: 11.4rem 1fr;
       grid-template-rows: 11.4rem 1fr;
       grid-template-areas: "header header" "left right";
+  overflow: hidden;
 }
 
 header {
@@ -34,8 +35,21 @@ header #viewMode {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: left;
+  margin-top: 4.6rem;
+  margin-left: -6rem;
   background: url("/images/home-bg-img.svg") no-repeat top/contain;
-  background-position: -10rem;
+  width: 80rem;
+  height: 80rem;
+  position: relative;
+}
+
+#bg .character {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 125px;
+  -webkit-animation: animate 3s ease-in-out infinite;
+          animation: animate 3s ease-in-out infinite;
 }
 
 #bg .ball {
@@ -127,5 +141,35 @@ main button,
 main .button {
   width: 100%;
   margin-bottom: 1.8rem;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  50% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  100% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  50% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  100% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
 }
 /*# sourceMappingURL=home.css.map */
