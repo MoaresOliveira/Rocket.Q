@@ -3,9 +3,9 @@
 </h1>
 
 <p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
@@ -48,6 +48,14 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - EJS
 - Express
 - SQLite
+
+## 👨‍💻 Como-rodar-o-projeto
+
+Você precisa ter o <strong>Node.js</strong> instalado na sua máquina. Senão tiver você pode fazer o download através [desse link](https://nodejs.org/en/download/).
+Com o Node instalado na máquina, vc precisa apenas de 3 comandos (no terminal) na pasta do projeto, nessa ordem:
+1. `npm install` -> Para instalar as dependências do projeto. (só precisa ser executado uma vez)<br>
+2. `npm init-db` -> Para criar o banco de dados local. (só precisa ser executado uma vez, mas se apagar o arquivo .sqlite terá que executar novamente)<br>
+3. `npm start` -> Para iniciar o servidor local (para acessar o projeto via navegador, digite na barra de endereço: localhost:3000)<br>
 
 ## :memo: Licença
 
