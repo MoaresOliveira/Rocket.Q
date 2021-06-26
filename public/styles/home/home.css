@@ -1,0 +1,115 @@
+.content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+  -ms-grid-rows: 11.4rem 1fr;
+      grid-template-rows: 11.4rem 1fr;
+      grid-template-areas: "header header" "left right";
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+}
+
+#bg {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: left;
+  background: url("/images/home-bg-img.svg") no-repeat top/contain;
+  background-position: -10rem;
+}
+
+#bg .ball {
+  background: var(--blue);
+  position: fixed;
+  width: 21.2rem;
+  height: 21.2rem;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  opacity: 0.1;
+}
+
+#bg .ball.top {
+  width: 63.3rem;
+  height: 63.3rem;
+  top: -46rem;
+  right: -35rem;
+}
+
+#bg .ball.bottom {
+  bottom: -15rem;
+  right: 5.6rem;
+}
+
+main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -12rem;
+  color: var(--black);
+}
+
+main .container {
+  width: 36.3rem;
+}
+
+main .container .separator div {
+  color: var(--grey-blue);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+  line-height: 10.4rem;
+  position: relative;
+}
+
+main .container .separator div::before {
+  position: absolute;
+  content: "";
+  width: 15.7rem;
+  height: 0.1rem;
+  background-color: var(--grey-blue);
+  left: 0;
+  top: 50%;
+}
+
+main .container .separator div::after {
+  position: absolute;
+  content: "";
+  width: 15.7rem;
+  height: 0.1rem;
+  background-color: var(--grey-blue);
+  right: 0;
+  top: 50%;
+}
+
+main h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: clamp(20px, 5vw, 2.8rem);
+  margin-bottom: 2.4rem;
+}
+
+main input {
+  border: 0.2rem solid var(--grey-blue);
+  padding: 0 1.6rem;
+  outline: none;
+}
+
+main input,
+main button,
+main .button {
+  width: 100%;
+  margin-bottom: 1.8rem;
+}
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,156 @@
+#room{
+    max-width: 80%;
+    header{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    .buttons{
+        display: flex;
+        img{
+            width: 2rem;
+            height: 2rem;
+        }
+        .button:nth-child(1){
+            margin-right: .8rem;
+            padding: 1.3rem 1.6rem;
+            img{
+                margin-left: 1.16rem;
+            }
+        }
+        .button:nth-child(2){
+            padding: 1.3rem 3.2rem;
+            img{
+                margin-right: 1rem;
+            }
+        }
+        
+    }
+    }
+
+    main{
+        #question-form{   
+                    
+            h2{
+                font-family: 'Poppins', sans-serif;
+                font-weight: 700;
+                color: var(--black);
+                font-size: 2.8rem;
+                margin-bottom: 2.4rem;
+                line-height: 4.2rem;
+            }
+            form{
+                padding: 1.6rem;
+                border: .2rem solid var(--grey-blue);
+                border-radius: 0 .8rem .8rem .8rem;
+                margin-bottom: 1.6rem;
+                
+                textarea{
+                    resize: none;
+                    background: none;
+                    width: 100%;
+                    outline: none;
+                    &::placeholder{
+                        color: var(--grey-blue);
+                    }
+                }
+                footer{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    > div{
+                        display: flex;
+                        align-items: center;
+                        
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 400;
+                        font-size: 1.4rem;
+                        color: var(--Icons-details);
+                        line-height: 4rem;
+                        img{
+                            margin-right: .9rem;
+                        }
+                    }
+                    button{
+                        height: auto;
+                        padding: .8rem 2.4rem;
+                        line-height: 2.4rem;
+                    }
+                }
+            }
+        }
+        .question-wrapper{
+            margin-bottom: .8rem;
+            background-color: var(--light-blue);
+            border-radius: 0 .8rem .8rem .8rem;
+            padding: 2.4rem 3.2rem 2.5rem 2.4rem;
+            font-family: 'Open Sans' ,sans-serif;
+            
+            .question-content{
+                display: flex;
+                align-items: flex-start;
+                .user{
+                    background: var(--blue);
+                    clip-path: circle();
+                    padding: 1.15rem 1.4rem;
+                }
+                .question{                    
+                    color: var(--black);
+                    margin-left: 1.6rem;
+                    p{
+                        word-break: break-word;
+                        display: flex;
+                        align-items: center;
+                        min-height: 5.2rem;
+                    }
+                }
+            }
+            .actions{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                > a{
+                    color: var(--grey-dark);
+                    display: flex;
+                    align-items: center;
+                    & + a{
+                    margin-left: 2.4rem;
+                    }
+                    > img{
+                        margin-right: .8rem;
+                    }
+                }
+            }
+            &.read{
+                background: var(--grey-medium);
+                .question-content{ 
+                    .user{
+                        background: var(--grey-blue);
+                    }
+                }
+            }
+        }
+        .no-questions{
+            text-align: center;
+            margin-top: 5.2rem;
+            img{
+                max-width: 100%;
+                margin-bottom: 1.2rem;
+            }
+            p{
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.8rem;
+                font-weight: 600;
+                
+                & + p{
+                    margin-top: 1.3rem;
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    line-height: 1.9rem;
+                }
+            }
+        }
+    }
+
+}
