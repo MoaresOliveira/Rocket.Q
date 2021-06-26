@@ -29,7 +29,7 @@ html{
 
 html.dark{
     --black: #FAFAFA;
-    --white: #0D114F;
+    --white: #FAFAFA;
     --red: #E83F5B;
     --light-blue: #E0ECFF;
     --blue: #3485FF;
@@ -101,7 +101,7 @@ button > img, .button >img{
 }
 button.outlined,
 .button.outlined{
-    background-color: var(--white);
+    background-color: transparent;
     color: var(--blue);
     border: .2rem solid var(--blue)
 }
