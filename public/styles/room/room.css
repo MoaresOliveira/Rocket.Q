@@ -15,6 +15,13 @@
           justify-content: space-between;
 }
 
+#room header #viewMode {
+  width: 5rem;
+  font-size: 2rem;
+  color: var(--black);
+  margin-right: .8rem;
+}
+
 #room header .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,20 +33,20 @@
   height: 2rem;
 }
 
-#room header .buttons .button:nth-child(1) {
+#room header .buttons .button:nth-child(2) {
   margin-right: .8rem;
   padding: 1.3rem 1.6rem;
 }
 
-#room header .buttons .button:nth-child(1) img {
+#room header .buttons .button:nth-child(2) img {
   margin-left: 1.16rem;
 }
 
-#room header .buttons .button:nth-child(2) {
+#room header .buttons .button:nth-child(3) {
   padding: 1.3rem 3.2rem;
 }
 
-#room header .buttons .button:nth-child(2) img {
+#room header .buttons .button:nth-child(3) img {
   margin-right: 1rem;
 }
 
@@ -64,6 +71,7 @@
   background: none;
   width: 100%;
   outline: none;
+  color: var(--black);
 }
 
 #room main #question-form form textarea::-webkit-input-placeholder {
@@ -215,6 +223,7 @@
 #room main .no-questions {
   text-align: center;
   margin-top: 5.2rem;
+  color: var(--black);
 }
 
 #room main .no-questions img {
