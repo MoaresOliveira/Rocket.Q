@@ -6,6 +6,7 @@
         "header header"
         "left right";
     overflow: hidden;
+    min-width: 28rem;
 }
 
 header {
@@ -111,4 +112,71 @@ main {
     0%{transform: translateY(5px);}
     50%{transform: translateY(-5px);}
     100%{transform: translateY(5px);}
+}
+@media screen and (max-width: 1440px){
+    #bg{
+        position: absolute;
+        z-index: -100;
+    }
+    main{
+        height: max-content;
+        margin-top: 6rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    
+    .content{
+        grid-template-areas:
+        "header header"
+        "right right";
+        
+    }
+    #bg{
+        width: 80vw;
+        .ball.bottom{
+            display: none;
+        }
+    }
+    main{
+        margin: 0 auto;
+        .container{
+            h2 + a.button.outlined{
+                background: var(--light-blue);
+            }
+        }
+    }
+}
+@media screen and (max-width: 425px) {
+    main{        
+        max-width: 95vw;
+        min-width: 27rem;
+        margin-top: 2rem;
+        height: max-content;
+    }
+    #bg{
+        background-position-y: 20rem;
+        top: -10rem;
+        .character{
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 320px){
+    *{
+        overflow-x: hidden;
+    }
+    .content{
+        header{
+            width: 90%;
+            justify-content: center;
+            gap: clamp(2rem, 5vw, 5rem);
+            a > img{
+                min-width: 15.5rem;
+                width: 100%;
+            }
+        }
+    }
+    #bg{
+        width: 95vw;
+    }
 }

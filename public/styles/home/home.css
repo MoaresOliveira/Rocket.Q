@@ -7,6 +7,7 @@
       grid-template-rows: 11.4rem 1fr;
       grid-template-areas: "header header" "left right";
   overflow: hidden;
+  min-width: 28rem;
 }
 
 header {
@@ -164,6 +165,75 @@ main .button {
   100% {
     -webkit-transform: translateY(5px);
             transform: translateY(5px);
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  #bg {
+    position: absolute;
+    z-index: -100;
+  }
+  main {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    margin-top: 6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+        grid-template-areas: "header header" "right right";
+  }
+  #bg {
+    width: 80vw;
+  }
+  #bg .ball.bottom {
+    display: none;
+  }
+  main {
+    margin: 0 auto;
+  }
+  main .container h2 + a.button.outlined {
+    background: var(--light-blue);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main {
+    max-width: 95vw;
+    min-width: 27rem;
+    margin-top: 2rem;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  #bg {
+    background-position-y: 20rem;
+    top: -10rem;
+  }
+  #bg .character {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  * {
+    overflow-x: hidden;
+  }
+  .content header {
+    width: 90%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: clamp(2rem, 5vw, 5rem);
+  }
+  .content header a > img {
+    min-width: 15.5rem;
+    width: 100%;
+  }
+  #bg {
+    width: 95vw;
   }
 }
 /*# sourceMappingURL=home.css.map */
