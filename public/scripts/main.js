@@ -41,3 +41,11 @@ function handleClick(event, check = true){
     //Abrir Modal
     modal.open()
 }
+
+// Copiar o ID da sala clicando no botão
+const roomIdButton = document.getElementById("room-id");
+
+roomIdButton.addEventListener("click", () => {
+    let content = document.querySelector("#room-id span").innerHTML;
+    navigator.clipboard.writeText(content);
+});
