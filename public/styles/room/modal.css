@@ -29,7 +29,7 @@
 }
 
 .modal-wrapper .modal h2 {
-  color: var(--black);
+  color: #0d114f;
   font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 1.2rem;
@@ -64,5 +64,39 @@
 
 .modal-wrapper .modal .buttons > button, .modal-wrapper .modal .buttons .button {
   padding: 1.3rem 3.2rem;
+}
+
+@media only screen and (max-width: 545px) {
+  .modal-wrapper .modal {
+    font-size: clamp(1.2rem, 1vw, 1.4rem);
+    width: 100vw;
+    margin: auto;
+    padding: 6.4rem 1rem;
+  }
+  .modal-wrapper .modal form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modal-wrapper .modal form input {
+    max-width: none;
+    width: 25rem;
+  }
+  .modal-wrapper .modal form .buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .modal-wrapper .modal form .buttons .button, .modal-wrapper .modal form .buttons button {
+    width: 25rem;
+  }
 }
 /*# sourceMappingURL=modal.css.map */

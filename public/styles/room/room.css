@@ -15,6 +15,20 @@
           justify-content: space-between;
 }
 
+#room header label.toggle {
+  top: 30px;
+  right: 30px;
+  position: absolute;
+  font-size: 30px;
+  color: var(--black);
+  display: none;
+  cursor: pointer;
+}
+
+#room header input#toggle {
+  display: none;
+}
+
 #room header .label {
   margin-right: 1.2rem;
 }
@@ -244,5 +258,72 @@
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.9rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #room {
+    min-width: 95%;
+  }
+  #room header a {
+    position: relative;
+  }
+  #room header a > img {
+    width: 100%;
+  }
+  #room header label.toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #room header .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #room header .buttons .button {
+    max-width: 18.4rem;
+  }
+  #room header .buttons .label {
+    float: left;
+  }
+  #room header input#toggle:checked + .buttons {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -webkit-transform: translate(-10%, 100%);
+            transform: translate(-10%, 100%);
+  }
+  #room #question-form {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #room header .buttons {
+    font-size: clamp(1.2rem, 1vw, 1.4rem);
+  }
+  #room header .buttons .button {
+    width: 10rem;
+  }
+  #room header .buttons .button.outlined > img {
+    margin-left: .5rem;
+  }
+  #room header .buttons .button + .button {
+    padding: 0 !important;
+  }
+  #room header .buttons .button + .button > img {
+    display: none;
+  }
+  #room main #question-form form footer > div {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=room.css.map */

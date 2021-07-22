@@ -5,6 +5,18 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        label.toggle{
+            top: 30px;
+            right: 30px;            
+            position: absolute;
+            font-size: 30px;
+            color: var(--black);
+            display: none;
+            cursor: pointer;
+        }        
+        input#toggle{
+            display: none;
+        }
         .label {
             margin-right: 1.2rem;
         }
@@ -166,5 +178,81 @@
                 }
             }
         }
+    }
+}
+@media only screen and (max-width: 768px){
+    #room{
+        min-width: 95%;
+    
+    header{
+        a{
+            position: relative;
+            > img{
+                width: 100%;
+            }
+        }
+        label.toggle{
+            display: flex;
+        }        
+        .buttons{
+            display: flex; 
+            visibility: hidden;    
+            position: absolute;        
+            opacity: 0;
+            width: 100%;
+            justify-content: flex-end;     
+            .button{
+                max-width: 18.4rem;
+            }
+            .label{
+                float: left;
+            }
+        }
+        input#toggle:checked + .buttons{            
+            visibility: visible;            
+            opacity: 1;
+            transition: all .5s;            
+            transform: translate(-10%,100%);
+        }
+
+    }
+    #question-form{
+        margin-top: 2rem;
+    }
+    }
+}
+@media only screen and (max-width: 425px){
+    #room{
+        header{
+            .buttons{
+                font-size: clamp(1.2rem, 1vw, 1.4rem);                
+                .button{
+                    width: 10rem;
+                    &.outlined{
+                        > img{
+                            margin-left: .5rem;
+                        }
+                    }
+                    +.button{
+                    padding: 0 !important;
+                    >img{
+                        display: none;
+                    }                    
+                }
+                }
+            }
+        }
+        main{
+            #question-form{
+                form{
+                    footer{ 
+                        > div{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+        
     }
 }

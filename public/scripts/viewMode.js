@@ -1,8 +1,7 @@
 const html = document.querySelector("html");
 const viewModeButton = document.querySelector("#viewMode");
 const logo = document.querySelector("header a img")
-
-if (localStorage.DarkMode) {
+if (localStorage.DarkMode == 'true') {
     html.classList.toggle("dark");
     logo.setAttribute("src", "/images/logo-light.svg");
     viewModeButton.checked = true
