@@ -80,4 +80,17 @@ section p .button {
   font-size: 2rem;
   width: 20rem;
 }
+
+@media only screen and (max-width: 500px) {
+  section header {
+    margin-top: 4rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section .container > img {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=error.css.map */

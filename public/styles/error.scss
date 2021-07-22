@@ -50,3 +50,16 @@ section{
         }
     }
 }
+@media only screen and (max-width: 500px){
+    section{
+        header{
+            margin-top: 4rem;
+            flex-direction: column;
+        }
+        .container{
+            >img{
+                width: 100%;
+            }
+        }
+    }
+}
