@@ -7,7 +7,7 @@ const route = express.Router();
 
 route.get("/", (req, res) => res.render("index", { page: "enter-room" }));
 route.get("/create-pass", (req, res) =>
-    res.render("index", { page: "create-pass" })
+res.render("index", { page: "create-pass" })
 );
 
 route.post("/create-room", RoomController.create);
@@ -20,5 +20,6 @@ route.get("/wrong-password/:room", ErrorController.wrongPass);
 
 route.post("/question/create/:room", QuestionController.create);
 route.post("/question/:room/:question/:action", QuestionController.index);
+route.get("/*", ErrorController.notFound);
 
 module.exports = route;

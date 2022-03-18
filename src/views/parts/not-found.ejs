@@ -19,6 +19,11 @@
     <div class="container">
         <img src="/images/not-found.svg" alt="Room not found ERROR 404">    
     </div>
-    <p>A sala <%='#' + roomId %> não foi encontrada</p>
+    <% if(roomId != undefined || roomId != null){ %>
+        <p>A sala <%='#' + roomId %> não foi encontrada</p>
+    <% } else { %>  
+        <p>Página não encontrada</p>
+    <% } %> 
+    
 </section>
 
