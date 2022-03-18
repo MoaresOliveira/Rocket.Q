@@ -1,142 +1,146 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-    text-decoration: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+	text-decoration: none;
 }
 
 html {
-    --black: #0d114f;
-    --white: #fafafa;
-    --red: #e83f5b;
-    --light-blue: #e0ecff;
-    --blue: #3485ff;
-    --background: #fbfcff;
-    --Overlay: #040911;
-    --Icons-details: #a5b0c1;
+	--black: #0d114f;
+	--white: #fafafa;
+	--red: #e83f5b;
+	--light-blue: #e0ecff;
+	--blue: #3485ff;
+	--background: #fbfcff;
+	--Overlay: #040911;
+	--Icons-details: #a5b0c1;
 
-    --grey-dark: #4d5e77;
-    --grey-blue: #a1b2cd;
-    --grey-medium: #d3d9e2;
-    --grey-light: #e5eaf1;
-    --grey-medium: #eaecf180;
+	--grey-dark: #4d5e77;
+	--grey-blue: #a1b2cd;
+	--grey-medium: #d3d9e2;
+	--grey-light: #e5eaf1;
+	--grey-medium: #eaecf180;
 
-    font-size: 62.5%;
+	font-size: 62.5%;
 }
 
 html.dark {
-    --black: #fafafa;
-    --white: #fafafa;
-    --red: #e83f5b;
-    --light-blue: #e0ecff;
-    --blue: #3485ff;
-    --background: #0d114f;
-    --Overlay: #040911;
-    --Icons-details: #a5b0c1;
+	--black: #fafafa;
+	--white: #fafafa;
+	--red: #e83f5b;
+	--light-blue: #e0ecff;
+	--blue: #3485ff;
+	--background: #0d114f;
+	--Overlay: #040911;
+	--Icons-details: #a5b0c1;
 
-    --grey-dark: #4d5e77;
-    --grey-blue: #a1b2cd;
-    --grey-medium: #d3d9e2;
-    --grey-light: #e5eaf1;
-    --grey-medium: #eaecf180;
+	--grey-dark: #4d5e77;
+	--grey-blue: #a1b2cd;
+	--grey-medium: #d3d9e2;
+	--grey-light: #e5eaf1;
+	--grey-medium: #eaecf180;
 
-    font-size: 62.5%;
+	font-size: 62.5%;
 }
 
 body {
-    display: flex;
-    height: 100vh;
-    background: var(--background);
+	display: flex;
+	height: 100vh;
+	background: var(--background);
 }
 body,
 button,
 input,
 textarea {
-    font-size: clamp(14px, 1.6rem, 2vw);
-    /* font-family: 'Poppins'; */
-    font-family: "Opens Sans", sans-serif;
+	font-size: clamp(14px, 1.6rem, 2vw);
+	/* font-family: 'Poppins'; */
+	font-family: "Opens Sans", sans-serif;
 }
 
 .content {
-    width: 100%;
-    margin: 0 auto;
+	width: 100%;
+	margin: 0 auto;
 }
 
 .sr-only {
-    position: absolute;
-    height: 1px;
-    width: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip-path: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
+	position: absolute;
+	height: 1px;
+	width: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip-path: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
 }
 /* Input and Buttons */
-input{
-    background: transparent;
-    color: var(--black);
+input {
+	background: transparent;
+	color: var(--black);
 }
-input::placeholder{
-    color: var(--grey-blue);
+
+input[type="password"] {
+	color: #0d114f;
+}
+input::placeholder {
+	color: var(--grey-blue);
 }
 input,
 button,
 .button {
-    border-radius: 0.8rem;
-    height: 5rem;
+	border-radius: 0.8rem;
+	height: 5rem;
 }
 button,
 .button {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    line-height: 0;
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	line-height: 0;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--blue);
-    color: var(--white);
-    cursor: pointer;
-    transition: filter 0.2s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--blue);
+	color: var(--white);
+	cursor: pointer;
+	transition: filter 0.2s;
 }
 button:hover,
 .button:hover {
-    filter: brightness(1.2);
+	filter: brightness(1.2);
 }
 
 button > img,
 .button > img {
-    margin-right: 1rem;
-    width: 2rem;
+	margin-right: 1rem;
+	width: 2rem;
 }
 button.outlined,
 .button.outlined {
-    background-color: transparent;
-    color: var(--blue);
-    border: 0.2rem solid var(--blue);
+	background-color: transparent;
+	color: var(--blue);
+	border: 0.2rem solid var(--blue);
 }
 
 button.red,
 .button.red {
-    background: var(--red);
-    color: var(--white);
+	background: var(--red);
+	color: var(--white);
 }
 button.grey,
 .button.grey {
-    background: var(--grey-light);
-    color: var(--grey-dark);
+	background: var(--grey-light);
+	color: var(--grey-dark);
 }
 /* **** HEADER **** */
 .content header {
-    width: 80%;
-    margin: 0 auto;
+	width: 80%;
+	margin: 0 auto;
 }
 .content header img {
-    width: 16.7rem;
-    margin: 3.5rem auto;
+	width: 16.7rem;
+	margin: 3.5rem auto;
 }
 /* Switch View Mode  */
 #viewMode {
@@ -151,7 +155,7 @@ button.grey,
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: .5rem;
+	padding: 0.5rem;
 	position: relative;
 	height: 2.6rem;
 	width: 5rem;
@@ -162,8 +166,8 @@ button.grey,
 	background-color: var(--light-blue);
 	border-radius: 50%;
 	position: absolute;
-	top: .2rem;
-	left: .2rem;
+	top: 0.2rem;
+	left: 0.2rem;
 	height: 2.2rem;
 	width: 2.2rem;
 	transform: translateX(0rem);
@@ -173,7 +177,6 @@ button.grey,
 #viewMode:checked + .label .knob {
 	transform: translateX(2.4rem);
 }
-
 
 .fa-moon {
 	color: #adc0cc;
@@ -185,17 +188,17 @@ button.grey,
 /* Remover spin button, quando input for tipo number. */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+	-webkit-appearance: none;
+	margin: 0;
 }
 
 input[type="number"] {
-    -moz-appearance: textfield;
+	-moz-appearance: textfield;
 }
 
 input:focus {
-    /* Remover cor da borda padrão do input, ao focar */
-    outline-offset: 0px;
-    outline: none;
-    border: 0.2rem solid var(--blue);
+	/* Remover cor da borda padrão do input, ao focar */
+	outline-offset: 0px;
+	outline: none;
+	border: 0.2rem solid var(--blue);
 }
